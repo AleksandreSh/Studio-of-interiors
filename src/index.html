@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Studio of interiors" })
+
+  <body>
+    @@include('html/elements/preloader.html',{})
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main>
+        <div class="first-section">
+          <div class="first-section__swiper swiper">
+            <div class="first-section__swiper-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="first-section__swiper-slide swiper-slide">
+                <div class="first-section__img-example">
+                  <img
+                    src="@img/first-section/first-section-slide1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="first-section__swiper-slide swiper-slide">
+                <div class="first-section__img-example">
+                  <img
+                    src="@img/first-section/first-section-slide2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="first-section__swiper-slide swiper-slide">
+                <div class="first-section__img-example">
+                  <img
+                    src="@img/first-section/first-section-slide3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="first-section__swiper-slide swiper-slide">
+                <div class="first-section__img-example">
+                  <img
+                    src="@img/first-section/first-section-slide4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="first-section__container">
+              <div class="scrollbar-navigation">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <h1 class="first-section__slogan">Thoughtful making of space</h1>
+              <!-- Discaver more -->
+              @@include('html/elements/discover-more.html',{"class":
+              "first-section__discover-more", "text": "Discover more", "href":
+              "one-projects.html"})
+              <!-- data-box -->
+              @@include('html/elements/data-box.html',{"class":
+              "first-section__data-box"})
+            </div>
+            <div class="first-section__column">
+              <div class="first-section__next">
+                <a class="first-section__next-link" href="one-projects.html"
+                  >Next Project</a
+                >
+              </div>
+              <div class="first-section__vertical-slogan">
+                Perfect proportions
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-section">
+          <div class="second-section__vertical-heading">
+            <div class="second-section__vertical-heading-box">About</div>
+          </div>
+          <div class="second-section__content">
+            <h2 class="second-section__heading">Company Philosophy</h2>
+            <p class="second-section__paragraph1 p1">
+              The basic philosophy of our studio is to create individual,
+              aesthetically stunning solutions for our customers by
+              lightning-fast development of projects employing unique styles and
+              architecture. Even if you don't have a ready sketch of what you
+              want - we will help you get the result.
+            </p>
+            <p class="second-section__paragraph2 p1">
+              We can also help you create harmony out of seemingly completely
+              incompatible elements in the interior or the exterior design. Do
+              you want to combine classics and abstract art? Modern and retro?
+              Love everything associated with the 1940's? No problem!
+            </p>
+            @@include('html/elements/discover-more.html',{"class":
+            "second-section__discover-more", "text": "Discover more", "href":
+            "about.html"})
+          </div>
+          <div class="second-section__img-box1">
+            <img
+              class="second-section__img-none"
+              src="@img/second-section/img-none.png"
+              alt=""
+            />
+          </div>
+          <div class="second-section__img-box2">
+            <img
+              class="second-section__top-img"
+              src="@img/second-section/top-img.png"
+              alt=""
+            />
+            <img
+              class="second-section__last-img"
+              src="@img/second-section/last-img.png"
+              alt=""
+            />
+          </div>
+          <div class="second-section__quote-box">
+            <div class="second-section__general-quote-box">
+              <div class="second-section__quote-box-conteiner">
+                <h2 class="second-section__quotes">“</h2>
+                <div class="second-section__pharaph3">
+                  We can also help you create harmony out of seemingly
+                  completely incompatible elements in the interior or the
+                  exterior design.
+                </div>
+              </div>
+              <div class="second-section__quote-signature">
+                <div class="second-section__quote-signature-box">
+                  Ceo company
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="third-section">
+          <div class="third-section__conteiner">
+            <div class="third-section__first-box">
+              <div class="third-section__vertical-about-box">
+                <div class="third-section__vertical-about-text">About</div>
+              </div>
+              <h2 class="third-section__title">Our Projects</h2>
+              <p class="third-section__subtitle p1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc
+                ante felis, aliquam eu enim sed, ornare pretium velit.
+              </p>
+              <div class="third-section__blorred-text">We have</div>
+            </div>
+            <div class="third-section__midl-box">
+              <div class="third-section__image-box">
+                <div class="third-section__image">
+                  <img src="@img/third-section/1.png" alt="" />
+                </div>
+                <div class="third-section__about-image">
+                  <div class="third-section__data">
+                    <div class="third-section__location">Lodz</div>
+                    <div class="third-section__date">16.10.2018</div>
+                    <div class="third-section__area">80 sq.m</div>
+                  </div>
+                  <div class="third-section__name">
+                    <h3>
+                      <a href="one-projects.html">Eyewear store interior</a>
+                    </h3>
+                    @@include('html/elements/discover-more.html',{"class":
+                    "third-section__discover-more", "text": "Discover more",
+                    "href": "one-projects.html"})
+                  </div>
+                </div>
+              </div>
+              <div class="third-section__image-box">
+                <div class="third-section__image">
+                  <img src="@img/third-section/2.png" alt="" />
+                </div>
+                <div class="third-section__about-image">
+                  <div class="third-section__data">
+                    <div class="third-section__location">Lodz</div>
+                    <div class="third-section__date">16.10.2018</div>
+                    <div class="third-section__area">80 sq.m</div>
+                  </div>
+                  <div class="third-section__name">
+                    <h3>
+                      <a href="one-projects.html">Minimalist style home</a>
+                    </h3>
+                    @@include('html/elements/discover-more.html',{"class":
+                    "third-section__discover-more", "text": "Discover more",
+                    "href": "one-projects.html"})
+                  </div>
+                </div>
+              </div>
+              <div class="third-section__image-box">
+                <div class="third-section__image">
+                  <img src="@img/third-section/3.png" alt="" />
+                </div>
+                <div class="third-section__about-image">
+                  <div class="third-section__data">
+                    <div class="third-section__location">Lodz</div>
+                    <div class="third-section__date">16.10.2018</div>
+                    <div class="third-section__area">80 sq.m</div>
+                  </div>
+                  <div class="third-section__name">
+                    <h3>
+                      <a href="one-projects.html"
+                        >Residence by the lighthouse</a
+                      >
+                    </h3>
+                    @@include('html/elements/discover-more.html',{"class":
+                    "third-section__discover-more", "text": "Discover more",
+                    "href": "one-projects.html"})
+                  </div>
+                </div>
+              </div>
+              <div class="third-section__image-box">
+                <div class="third-section__image">
+                  <img src="@img/third-section/4.png" alt="" />
+                </div>
+                <div class="third-section__about-image">
+                  <div class="third-section__data">
+                    <div class="third-section__location">Lodz</div>
+                    <div class="third-section__date">16.10.2018</div>
+                    <div class="third-section__area">80 sq.m</div>
+                  </div>
+                  <div class="third-section__name">
+                    <h3>
+                      <a href="one-projects.html">Eyewear storeinterior</a>
+                    </h3>
+                    @@include('html/elements/discover-more.html',{"class":
+                    "third-section__discover-more", "text": "Discover more",
+                    "href": "one-projects.html"})
+                  </div>
+                </div>
+              </div>
+              <div class="third-section__image-box">
+                <div class="third-section__image">
+                  <img src="@img/third-section/5.png" alt="" />
+                </div>
+                <div class="third-section__about-image">
+                  <div class="third-section__data">
+                    <div class="third-section__location">Lodz</div>
+                    <div class="third-section__date">16.10.2018</div>
+                    <div class="third-section__area">80 sq.m</div>
+                  </div>
+                  <div class="third-section__name">
+                    <h3><a href="one-projects.html">House on a Hillside</a></h3>
+                    @@include('html/elements/discover-more.html',{"class":
+                    "third-section__discover-more", "text": "Discover more",
+                    "href": "one-projects.html"})
+                  </div>
+                </div>
+              </div>
+              <a href="projects.html" class="third-section__image-box-last">
+                <h3>See more 60 projects</h3>
+                <div class="third-section__image">
+                  <img src="@img/third-section/last.png" alt="" />
+                </div>
+              </a>
+            </div>
+            @@include('html/elements/example-box.html',{"class":
+            "third-section__last-box"})
+          </div>
+        </div>
+        @@include('html/elements/email-section.html')
+        @@include('html/elements/contact.html',{"class": "last-section"})
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+    @@include('html/elements/pop-up.html',{})
+    @@include('html/elements/pop-up2.html',{})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

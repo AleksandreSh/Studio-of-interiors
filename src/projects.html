@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Projects" })
+
+  <body>
+    @@include('html/elements/preloader.html',{})
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="page-projects">
+        <div
+          class="page-projects__first-projects-section first-projects-section"
+        >
+          <div class="first-projects-section__title-box">
+            <h2 class="first-projects-section__title">Our Projects</h2>
+            <div class="first-projects-section__subtitle-box">
+              <div class="first-projects-section__subtitle p1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc
+                ante felis, aliquam eu enim sed, ornare pretium velit.
+              </div>
+              <div class="first-projects-section__tabs tabs">
+                <div class="tabs__opening-box">
+                  <div class="tabs__select-tab">House</div>
+                  <div class="tabs__opening-icon icon-down-arrowhead"></div>
+                </div>
+                <ul class="tabs__list">
+                  <li class="tabs__tab active-tab" id="all">House</li>
+                  <li class="tabs__tab" id="apartments">Apartments</li>
+                  <li class="tabs__tab" id="commerce">Commerce</li>
+                  <li class="tabs__tab" id="architecture">Architecture</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="page-projects__second-projects-section second-projects-section"
+        >
+          <div class="second-projects-section__conteiner">
+            <div class="second-projects-section__image-box card commerce">
+              <div class="second-projects-section__image">
+                <img src="@img/third-section/1.png" alt="" />
+              </div>
+              <div class="second-projects-section__about-image">
+                <div class="second-projects-section__data">
+                  <div class="second-projects-section__location">Lodz</div>
+                  <div class="second-projects-section__date">16.10.2018</div>
+                  <div class="second-projects-section__area">80 sq.m</div>
+                </div>
+                <div class="second-projects-section__name">
+                  <h3>
+                    <a href="one-projects.html">Eyewear store interior</a>
+                  </h3>
+                  @@include('html/elements/discover-more.html',{"class":
+                  "two-proj-section__discover-more", "text": "Discover more",
+                  "href": "new.html"})
+                </div>
+              </div>
+            </div>
+            <div class="second-projects-section__image-box card commerce">
+              <div class="second-projects-section__image">
+                <img src="@img/third-section/2.png" alt="" />
+              </div>
+              <div class="second-projects-section__about-image">
+                <div class="second-projects-section__data">
+                  <div class="second-projects-section__location">Lodz</div>
+                  <div class="second-projects-section__date">16.10.2018</div>
+                  <div class="second-projects-section__area">80 sq.m</div>
+                </div>
+                <div class="second-projects-section__name">
+                  <h3><a href="one-projects.html">Minimalist style home</a></h3>
+                  @@include('html/elements/discover-more.html',{"class":
+                  "two-proj-section__discover-more", "text": "Discover more",
+                  "href": "one-projects.html"})
+                </div>
+              </div>
+            </div>
+            <div class="second-projects-section__image-box card apartments">
+              <div class="second-projects-section__image">
+                <img src="@img/third-section/3.png" alt="" />
+              </div>
+              <div class="second-projects-section__about-image">
+                <div class="second-projects-section__data">
+                  <div class="second-projects-section__location">Lodz</div>
+                  <div class="second-projects-section__date">16.10.2018</div>
+                  <div class="second-projects-section__area">80 sq.m</div>
+                </div>
+                <div class="second-projects-section__name">
+                  <h3>
+                    <a href="one-projects.html">Residence by the lighthouse</a>
+                  </h3>
+                  @@include('html/elements/discover-more.html',{"class":
+                  "two-proj-section__discover-more", "text": "Discover more",
+                  "href": "one-projects.html"})
+                </div>
+              </div>
+            </div>
+            <div class="second-projects-section__image-box card commerce">
+              <div class="second-projects-section__image">
+                <img src="@img/third-section/4.png" alt="" />
+              </div>
+              <div class="second-projects-section__about-image">
+                <div class="second-projects-section__data">
+                  <div class="second-projects-section__location">Lodz</div>
+                  <div class="second-projects-section__date">16.10.2018</div>
+                  <div class="second-projects-section__area">80 sq.m</div>
+                </div>
+                <div class="second-projects-section__name">
+                  <h3><a href="one-projects.html">Eyewear storeinterior</a></h3>
+                  @@include('html/elements/discover-more.html',{"class":
+                  "two-proj-section__discover-more", "text": "Discover more",
+                  "href": "one-projects.html"})
+                </div>
+              </div>
+            </div>
+            <div class="second-projects-section__image-box card apartments">
+              <div class="second-projects-section__image">
+                <img src="@img/third-section/2.png" alt="" />
+              </div>
+              <div class="second-projects-section__about-image">
+                <div class="second-projects-section__data">
+                  <div class="second-projects-section__location">Lodz</div>
+                  <div class="second-projects-section__date">16.10.2018</div>
+                  <div class="second-projects-section__area">80 sq.m</div>
+                </div>
+                <div class="second-projects-section__name">
+                  <h3><a href="one-projects.html">Minimalist style home</a></h3>
+                  @@include('html/elements/discover-more.html',{"class":
+                  "two-proj-section__discover-more", "text": "Discover more",
+                  "href": "one-projects.html"})
+                </div>
+              </div>
+            </div>
+            <div class="second-projects-section__image-box card architecture">
+              <div class="second-projects-section__image">
+                <img src="@img/third-section/3.png" alt="" />
+              </div>
+              <div class="second-projects-section__about-image">
+                <div class="second-projects-section__data">
+                  <div class="second-projects-section__location">Lodz</div>
+                  <div class="second-projects-section__date">16.10.2018</div>
+                  <div class="second-projects-section__area">80 sq.m</div>
+                </div>
+                <div class="second-projects-section__name">
+                  <h3>
+                    <a href="one-projects.html">Residence by the lighthouse</a>
+                  </h3>
+                  @@include('html/elements/discover-more.html',{"class":
+                  "two-proj-section__discover-more", "text": "Discover more",
+                  "href": "one-projects.html"})
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-projects__last-projects-section last-projects-section">
+          <div class="last-projects-section__conteiner">
+            @@include('html/elements/example-box.html',{"class":
+            "last-projects-section__last-box"})
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html',{"class":"footer-black"})
+    </div>
+    @@include('html/elements/pop-up.html',{})
+    @@include('html/elements/pop-up2.html',{})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<div id="popup" class="popup">
+  <div class="popup__body">
+    <form
+      id="popup-form"
+      class="popup__content close-area"
+      action="#"
+      method="get"
+      enctype="multipart/form-data"
+    >
+      <fieldset form="popup-form" class="popup__first-box">
+        <div class="popup__first-conteiner conteiner">
+          <h3>Calculate the cost of work</h3>
+          <div class="popup__personal-data">
+            <label class="popup__name" for="" required>
+              <p>Name</p>
+              <input type="text" name="username" required class="_req" />
+            </label>
+            <label class="popup__last-name" for="">
+              <p>Last name</p>
+              <input type="text" name="last-name" />
+            </label>
+            <label class="popup__phone" for="">
+              <p>Phone</p>
+              <input type="tel" name="phone" required class="_req" />
+            </label>
+            <label class="popup__city" for="">
+              <p>Your city</p>
+              <input type="text" name="city" required class="_req" />
+            </label>
+            <label class="popup__email" for="">
+              <p>Email</p>
+              <input type="email" name="email" required class="_req _email" />
+            </label>
+            <label class="popup__select-type" for="">
+              <p>Property type</p>
+              <select
+                form="popup-form"
+                type="text"
+                name="select-type"
+                required
+                class="_req"
+              >
+                <option class="popup__select-option" value=""></option>
+                <option class="popup__select-option" value="Type 1">
+                  Type 1
+                </option>
+                <option class="popup__select-option" value="Type 2">
+                  Type 2
+                </option>
+                <option class="popup__select-option" value="Type 3">
+                  Type 3
+                </option>
+              </select>
+            </label>
+            <label class="popup__user-comment" for="">
+              <p>Your comment</p>
+              <textarea type="text" name="user-comment"></textarea>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset form="popup-form" class="popup__second-box">
+        <div class="popup__second-conteiner conteiner">
+          <div class="popup__name-group-area">Area (m2)</div>
+          <div class="popup__group-area">
+            <div class="popup__option-item">
+              <label class="popup__label" for="to-50"><p>to 50</p> </label>
+              <input
+                id="to-50"
+                class="popup__radio-area"
+                type="radio"
+                name="area"
+                value="to 50"
+              />
+              <div class="popup__line"></div>
+            </div>
+            <div class="popup__option-item">
+              <label class="popup__label" for="50-150"><p>50-150</p> </label>
+              <input
+                id="50-150"
+                class="popup__radio-area"
+                type="radio"
+                name="area"
+                value="50-150"
+                checked
+              />
+              <div class="popup__line"></div>
+            </div>
+            <div class="popup__option-item">
+              <label class="popup__label" for="150-250"><p>150-250</p> </label>
+              <input
+                id="150-250"
+                class="popup__radio-area"
+                type="radio"
+                name="area"
+                value="150-250"
+              />
+              <div class="popup__line"></div>
+            </div>
+            <div class="popup__option-item">
+              <label class="popup__label" for="250-400">
+                <p>250-400</p>
+              </label>
+              <input
+                id="250-400"
+                class="popup__radio-area"
+                type="radio"
+                name="area"
+                value="250-400"
+              />
+              <div class="popup__line"></div>
+            </div>
+            <div class="popup__option-item">
+              <label class="popup__label" for="400-600">
+                <p>400-600</p>
+              </label>
+              <input
+                id="400-600"
+                class="popup__radio-area"
+                type="radio"
+                name="area"
+                value="400-600"
+              />
+              <div class="popup__line"></div>
+            </div>
+            <div class="popup__option-item">
+              <label class="popup__label" for="600-800">
+                <p>600-800</p>
+              </label>
+              <input
+                id="600-800"
+                class="popup__radio-area"
+                type="radio"
+                name="area"
+                value="600-800"
+              />
+              <div class="popup__line"></div>
+            </div>
+            <div class="popup__option-item">
+              <label class="popup__label" for="800-1000">
+                <p>800-1000</p>
+              </label>
+              <input
+                id="800-1000"
+                class="popup__radio-area"
+                type="radio"
+                name="area"
+                value="800-1000"
+              />
+              <div class="popup__line"></div>
+            </div>
+            <div class="popup__option-item">
+              <label class="popup__label" for="1000+">
+                <p>1000+</p>
+              </label>
+              <input
+                id="1000+"
+                class="popup__radio-area"
+                type="radio"
+                name="area"
+                value="1000+"
+              />
+              <div class="popup__line"></div>
+            </div>
+          </div>
+          <div class="popup__group-photo">
+            <div class="popup__add-photo">
+              <input
+                class="popup__input-foto _req"
+                type="file"
+                name="photo"
+                id="photo"
+                accept="image/*"
+              />
+              <div class="popup__preview">
+                <p></p>
+              </div>
+            </div>
+            <div class="popup__item-photo">
+              <label for="photo">
+                <div class="popup__img-add-photo"></div>
+              </label>
+              <div class="popup__coment-photo">
+                <p>Attach your file</p>
+                <p class="popup__note-photo">File size not more than 10 MB</p>
+              </div>
+            </div>
+            <!--<a href="#popup2">-->
+            <input
+              type="submit"
+              value="Send Request"
+              class="popup__buttom popup-link"
+              id="btn"
+              href="#popup2"
+            />
+            <!--</input>-->
+            <!--</a>-->
+          </div>
+          <div class="popup__text">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="popup__criss-cross icon-criss-cross close-popup"></div>
+</div>

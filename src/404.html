@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Page not found" })
+  <body>
+    <div class="wraper wraper-404">
+      @@include('html/header.html',{})
+      <main class="page-404">
+        <div class="page-404__background">
+          <img src="@img/contacts-section/background.png" alt="" />
+          <div></div>
+        </div>
+        <div class="page-404__conteiner">
+          <div class="page-404__vertical-box">
+            <div class="page-404__vertical-heading">
+              <div class="page-404__vertical-heading-box">404</div>
+            </div>
+          </div>
+          <div class="page-404__content">
+            <h2 class="page-404__title">Page not found</h2>
+            <div class="page-404__subtitle">
+              Something went wrong. Page not found
+            </div>
+            @@include('html/elements/discover-more.html',{"class":
+            "page-404__discover-more", "text": "go to main", "href":
+            "index.html"})
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+    @@include('html/elements/pop-up.html',{})
+    @@include('html/elements/pop-up2.html',{})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

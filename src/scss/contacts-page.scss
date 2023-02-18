@@ -1,0 +1,23 @@
+.page-contacts {
+  .contacts {
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 600px) {
+      min-height: 846px;
+    }
+    &__conteiner {
+      max-width: 1440px;
+      width: 100%;
+      height: auto;
+      padding-top: 0;
+      padding-bottom: 0;
+      box-sizing: border-box;
+    }
+    &__vertical-contacts-box {
+      display: none;
+    }
+  }
+}

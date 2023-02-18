@@ -1,0 +1,27 @@
+:root {
+  --pdng-conteiner: 63px;
+  @media screen and (max-width: 1024px) {
+    --pdng-conteiner: 56px;
+  }
+  @media screen and (max-width: 768px) {
+    --pdng-conteiner: 48px;
+  }
+  @media screen and (max-width: 375px) {
+    --pdng-conteiner: 24px;
+  }
+  //--------------width-smaller-container
+  --width-smaller-container: 1044px;
+  @media screen and (max-width: 1440px) {
+    --width-smaller-container: 72.64%;
+  }
+  @media screen and (max-width: 1024px) {
+    --width-smaller-container: 68.95%;
+  }
+  @media screen and (max-width: 768px) {
+    --width-smaller-container: 67.71%;
+  }
+  @media screen and (max-width: 600px) {
+    --width-smaller-container: 100%;
+  }
+  --pdng-text-conteiner: 120px;
+}

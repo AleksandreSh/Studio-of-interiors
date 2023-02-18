@@ -1,0 +1,121 @@
+.popup2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(8, 8, 8, 0.96);
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 51;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    .popup2__body {
+      opacity: 1;
+      transition: all 0.8s ease 0s;
+      transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+    }
+  }
+  &__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 0 0 1.25%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 171.43%;
+    color: #3a3e4b;
+    // opacity: 0;
+    // transition: all 0.8s ease 0s;
+    // transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    @media (max-width: 1024px) {
+      padding: 0 0 1.46%;
+    }
+    @media (max-width: 768px) {
+      padding: 46px 0;
+    }
+    @media (max-width: 587px) {
+      padding: 64px 0;
+    }
+  }
+
+  &__content {
+    width: 68.95%;
+    // height: 52.73%;
+    padding: 10.45% 12.5%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+      width: 67.91%;
+      padding: 7.29% 4.6875%;
+    }
+    @media (max-width: 375px) {
+      width: 87.4%;
+      padding: 10.66% 6.4%;
+    }
+  }
+
+  &__box {
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    opacity: 0.7;
+    text-align: center;
+    @media (max-width: 768px) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__button {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    @include button(#3a3e4b, #ffffff, 0);
+  }
+
+  &__criss-cross {
+    position: absolute;
+    top: 43px;
+    right: 43px;
+    @media (max-width: 768px) {
+      top: 40px;
+      right: 40px;
+    }
+    @media (max-width: 375px) {
+      top: 24px;
+      right: 24px;
+    }
+  }
+}
+.button {
+  &__text {
+  }
+}
+.popup-link {
+}
+.icon-criss-cross {
+}
+.close-popup {
+}

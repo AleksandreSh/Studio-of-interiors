@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"News" })
+
+  <body>
+    @@include('html/elements/preloader.html',{})
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="page-news">
+        <div class="page-news__first-news-section first-news-section">
+          <div class="first-news-section__title-box">
+            <h2 class="first-news-section__title">Our latest news</h2>
+            <div class="first-news-section__tabs tabs">
+              <div class="tabs__opening-box">
+                <div class="tabs__select-tab">All</div>
+                <div class="tabs__opening-icon icon-down-arrowhead"></div>
+              </div>
+              <ul class="tabs__list">
+                <li class="tabs__tab active-tab" id="all">All</li>
+                <li class="tabs__tab" id="blog">Blog</li>
+                <li class="tabs__tab" id="news-preview">News</li>
+                <li class="tabs__tab" id="advice">Advice from the designer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="page-news__second-news-section second-news-section">
+          <div class="second-news-section__conteiner">
+            <div class="second-news-section__doblebox news-preview card">
+              <div class="second-news-section__content">
+                @@include('html/elements/discover-more.html',{"class":
+                "second-news-section__discover-more", "text": "Discover more",
+                "href": "one-news.html"})
+                <div class="second-news-section__subtitle p1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  vel gravida urna. Donec blandit sapien eu diam ullamcorper
+                  euismod. Nam tempus pellentesque ligula ut aliquam.
+                </div>
+                <div class="second-news-section__title">
+                  5 smart tips for productive collaboration with the designer
+                </div>
+              </div>
+              <div class="second-news-section__img-box">
+                <img src="@img/news/Rectangle 2.3 (4).jpg" alt="" />
+              </div>
+            </div>
+            <div class="second-news-section__singlebox blog card">
+              <div class="second-news-section__content">
+                <a href="one-news" class="second-news-section__title">
+                  Non-standard plinth options
+                </a>
+              </div>
+              <div class="second-news-section__img-box">
+                <img src="@img/news/Rectangle 2.5.jpg" alt="" />
+              </div>
+            </div>
+            <div class="second-news-section__singlebox blog card">
+              <div class="second-news-section__content">
+                <a href="one-news" class="second-news-section__title">
+                  Interior design, LCD Rybalsky
+                </a>
+              </div>
+              <div class="second-news-section__img-box">
+                <img src="@img/news/Rectangle 2.9.jpg" alt="" />
+              </div>
+            </div>
+            <div class="second-news-section__doblebox advice card">
+              <div class="second-news-section__content">
+                @@include('html/elements/discover-more.html',{"class":
+                "second-news-section__discover-more", "text": "Discover more",
+                "href": "one-news.html"})
+                <div class="second-news-section__subtitle p1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  vel gravida urna. Donec blandit sapien eu diam ullamcorper
+                  euismod. Nam tempus pellentesque ligula ut aliquam.
+                </div>
+                <div class="second-news-section__title">
+                  5 smart tips for productive collaboration with the designer
+                </div>
+              </div>
+              <div class="second-news-section__img-box">
+                <img src="@img/news/Rectangle 2.3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="page-news__pages-navigation-section pages-navigation-section"
+        >
+          <div class="pages-navigation-section__conteiner">
+            <a class="icon-arrow-right" href="news.html"></a>
+            <a href="news.html">1</a>
+            <a href="news.html">2</a>
+            <a href="news.html">3</a>
+            <div class="ages-navigation-section__points">...</div>
+            <a href="news.html">15</a>
+            <a class="icon-arrow-right" href="news.html"></a>
+          </div>
+        </div>
+        <div class="page-news__last-news-section last-news-section">
+          <div class="last-news-section__background">
+            <img
+              class="last-news-section__img-background"
+              src="@img/news/Rectangle.jpg"
+              alt=""
+            />
+          </div>
+          <div class="last-news-section__content">
+            <div class="last-news-section__conteiner">
+              <h2 class="last-news-section__title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h2>
+              <div class="last-news-section__subtitle">
+                <div class="last-news-section__text p1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus
+                  ligula. Nunc ante felis, aliquam.
+                </div>
+                <form
+                  action="#"
+                  method="get"
+                  class="last-news-section__email-box"
+                >
+                  <input type="email" name="email" placeholder="Email" id="" />
+                  <a
+                    href="#"
+                    class="last-news-section__email-submit icon-arrow-right"
+                  ></a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+    @@include('html/elements/pop-up.html',{})
+    @@include('html/elements/pop-up2.html',{})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"One projects" })
+
+  <body>
+    @@include('html/elements/preloader.html',{})
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="page-one-project one-project">
+        <div class="one-project__first-project-section first-project-section">
+          <div class="first-project-section__content">
+            <h2 class="first-project-section__title">
+              Residence by the lighthouse
+            </h2>
+            <div class="first-project-section__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc
+              ante felis, aliquam eu enim sed, ornare pretium velit.
+            </div>
+            <div class="first-project-section__data">
+              <div class="first-project-section__location icon-geotag">
+                Lodz, Poland
+              </div>
+              <div class="first-project-section__date icon-calc">
+                16.10.2018
+              </div>
+              <div class="first-project-section__area icon-size">80 sq.m</div>
+            </div>
+          </div>
+          <div class="first-project-section__share-box">
+            <div class="first-project-section__share-title">Share:</div>
+            <div class="first-project-section__socials-box">
+              <div class="first-project-section__facebook icon-facebook"></div>
+              <div class="first-project-section__twiter icon-twiter"></div>
+              <div class="first-project-section__linkedin icon-linkedin"></div>
+              <div class="first-project-section__link icon-group"></div>
+            </div>
+          </div>
+        </div>
+        <div class="one-project__second-project-section second-project-section">
+          <h4 class="second-project-section__title">
+            Donec et ipsum nec quam posuere maximus eu in erat. Duis laoreet
+            finibus consectetur.
+          </h4>
+          <div class="second-project-section__subtitle p1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
+            gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam
+            tempus pellentesque ligula ut aliquam. Donec et ipsum nec quam
+            posuere maximus eu in erat. Duis laoreet finibus consectetur. Nullam
+            pulvinar ex sit amet leo gravida, sed mattis enim vehicula. Duis
+            purus nisl, consectetur ut est non, placerat eleifend turpis. Duis
+            auctor suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor
+            nec urna. Proin finibus lobortis arcu dictum convallis. Ut fermentum
+            eu magna vel laoreet. In lacus augue, malesuada id elit sit amet,
+            varius imperdiet ex. Nullam blandit lobortis posuere:
+          </div>
+          @@include('html/elements/discover-more.html',{"class":
+          "second-project-section__discover-more", "text": "Discover more",
+          "href": "one-projects.html"})
+        </div>
+        <div class="one-project__third-project-section third-project-section">
+          <div class="third-project-section__container">
+            <div class="third-project-section__grid-box">
+              <div class="third-project-section__img">
+                <img src="@img/one-project/Rectangle 1.jpg" alt="" />
+              </div>
+              <div class="third-project-section__img">
+                <img src="@img/one-project/Rectangle 2.6.jpg" alt="" />
+              </div>
+              <div class="third-project-section__img">
+                <img src="@img/one-project/Rectangle 2.7.jpg" alt="" />
+              </div>
+              <div class="third-project-section__img">
+                <img src="@img/one-project/Rectangle 2.8.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="one-project__fourth-project-section fourth-project-section">
+          <a
+            href="#popup"
+            class="fourth-project-section__button button popup-link"
+          >
+            <div class="button__text">View more photo</div>
+          </a>
+        </div>
+        <div class="one-project__last-project-section last-project-section">
+          <div class="last-project-section__conteiner">
+            @@include('html/elements/example-box.html',{"class":
+            "last-project-section__example-box"})
+            <div class="last-project-section__next-project-box">
+              <div class="last-project-section__title-box">
+                <a href="one-projects.html" class="last-project-section__link"
+                  >Next project</a
+                >
+                <h2 class="last-project-section__title">Perfect proportions</h2>
+              </div>
+              <div class="last-project-section__image-box">
+                <img src="@img/one-project/Rectangle 2.5.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html',{"class":"footer-none"})
+    </div>
+    @@include('html/elements/pop-up.html',{})
+    @@include('html/elements/pop-up2.html',{})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

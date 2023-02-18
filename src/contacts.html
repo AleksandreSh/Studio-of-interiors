@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Contacts" })
+
+  <body>
+    @@include('html/elements/preloader.html',{})
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="page-contacts">
+        @@include('html/elements/contact.html',{"class":
+        "page-contacts__first-section"})
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+    @@include('html/elements/pop-up.html',{})
+    @@include('html/elements/pop-up2.html',{})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
