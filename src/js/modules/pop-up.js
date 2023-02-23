@@ -87,29 +87,8 @@ function popupClose(popupActive, doUnlock = true) {
 //    body.style.paddingRight = lockPaddingVaue;
 //    body.classList.add('_lock');
 
-//    unlock = false;
-//    setTimeout(function () {
-//       unlock = true;
-//    }, timeout);
-// }
 
-// function bodyUnlock() {
-//    setTimeout(function () {
-//       if (lockPadding.length > 0) {       
-//          for (let index = 0; index < lockPadding.length; index++) {
-//             const el = lockPadding[index];
-//             el.style.paddingRight = '0px';  
-//          }
-//       }
-//       body.style.paddingRight = '0px';
-//       body.classList.remove('_lock');
-//    }, timeout);
 
-//    unlock = false;
-//    setTimeout(function () {
-//       unlock = true;
-//    },timeout);
-// }
 
 document.addEventListener('keydown', function name(e) {
    //const esc = Escape;

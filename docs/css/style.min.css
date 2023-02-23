@@ -792,43 +792,45 @@ body {
 }
 
 .preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: 100%;
-  background: #080808;
-  z-index: 1001;
+  height: 100vh;
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s opacity;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  transition: all 0.7s ease-out;
 }
-.preloader.loaded_hiding {
-  transition: 0.3s opacity;
-  opacity: 0;
+.preloader__container {
+  width: 137px;
+  display: flex;
+  justify-content: space-between;
 }
-.preloader.loaded {
-  display: none;
-}
-.preloader__content {
-  font-family: "Montserrat";
-  font-style: normal;
+.preloader__title {
   font-weight: 300;
   font-size: 24px;
-  line-height: 120.83%;
-  color: #fafafa;
+  line-height: 29px;
   letter-spacing: 0.26em;
-  text-transform: uppercase;
-  display: flex;
+  color: white;
+  transition: all 0.5s;
 }
-@media (max-width: 1024px) {
-  .preloader__content {
-    letter-spacing: normal;
-  }
+.preloader__title__active {
+  text-align: center;
 }
-.preloader__variable-element.space {
-  margin-left: 15px;
+.preloader__load {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.26em;
+  color: white;
+}
+.preloader__hide {
+  opacity: 0;
+  z-index: -10;
+  visibility: hidden;
 }
 
 .wrapper {
@@ -1317,7 +1319,7 @@ main {
 }
 @media (max-width: 500px) {
   .first-section {
-    height: 100vh;
+    height: 85vh;
   }
 }
 .first-section__swiper {
@@ -1451,6 +1453,7 @@ main {
   z-index: 1;
   font-size: 56px;
   line-height: 121.43%;
+  pointer-events: none;
 }
 @media (max-width: 1024px) {
   .first-section__slogan {
@@ -1741,7 +1744,7 @@ main {
 }
 @media (max-width: 768px) and (max-width: 350px) {
   .second-section {
-    padding: 0px;
+    padding: 22px 0px;
   }
 }
 .second-section__vertical-heading {
@@ -6574,7 +6577,7 @@ main {
 .popup__name._error {
   border-bottom: solid 1px red;
 }
-.popup__last-name {
+.popup__last-name._error {
   border-bottom: solid 1px red;
 }
 .popup__phone._error {

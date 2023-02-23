@@ -132,8 +132,10 @@
   }
 
   &__last-name {
+    &._error {
     border-bottom: solid 1px red;
   }
+}
 
   &__phone {
     &._error {
@@ -178,9 +180,6 @@
   &__second-box {
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.04);
-  }
-
-  &__second-conteiner {
   }
 
   &__name-group-area {
@@ -382,8 +381,6 @@
     }
   }
 
-  &__note-photo {
-  }
 
   &__buttom {
     margin-top: 5px;
@@ -430,3 +427,4 @@
     }
   }
   
+

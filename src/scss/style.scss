@@ -76,8 +76,9 @@ main {
     height: 959px;
   }
   @media (max-width: 500px) {
-    height: 100vh; //542px
+    height: 85vh; //542px
   }
+ 
   &__swiper {
     width: 100%;
     height: 100%;
@@ -193,6 +194,7 @@ main {
     z-index: 1;
     font-size: 56px;
     line-height: 121.43%;
+    pointer-events: none;
     @media (max-width: 1024px) {
       width: 440px;
       font-size: 48px;
@@ -334,7 +336,7 @@ main {
       padding: 6.67% 24px 17.07%;
     }
     @media (max-width: 350px) {
-      padding: 0px;
+      padding: 22px 0px ;
     }
   }
 

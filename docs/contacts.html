@@ -13,13 +13,13 @@
 
 
   <body>
-    <div class="preloader">
-  <div class="preloader__content">
-    <div class="preloader__standing-element">HI</div>
-    <div class="preloader__variable-element space" id="variable-element"></div>
+    
+<div class="preloader">
+  <div class="preloader__container">
+      <div class="preloader__title">HI</div>
+      <div class="preloader__load"><span id="percents">0</span>%</div>
   </div>
 </div>
-
     <div class="wrapper">
       <header class="header lock-padding">
   <div class="header__container">
@@ -196,7 +196,7 @@
             </label>
             <label class="popup__last-name" for="">
               <p>Last name</p>
-              <input type="text" name="last-name" />
+              <input type="text" name="last-name"required class="_req" />
             </label>
             <label class="popup__phone" for="">
               <p>Phone</p>
@@ -390,25 +390,8 @@
   <div class="popup__criss-cross icon-criss-cross close-popup"></div>
 </div>
 
-    <div id="popup2" class="popup2 popup">
-  <div class="popup2__body">
-    <div class="popup2__content close-area">
-      <!--<div class="popup2__box">-->
-      <h4 class="popup2__title">Thank you for your message!</h4>
-      <div class="popup2__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-        ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
-        felis, aliquam eu enim sed, ornare pretium velit.
-      </div>
-      <a href="#popup" class="popup2__button button popup-link">
-        <div class="button__text">Send again</div>
-      </a>
-      <!--</div>-->
-    </div>
-  </div>
-  <div class="popup2__criss-cross icon-criss-cross close-popup"></div>
-</div>
-
+    
+    
     <script src="js/app.min.js"></script>
   </body>
 </html>

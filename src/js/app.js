@@ -50,7 +50,7 @@ import "./modules/input-file.js";
 import "./modules/pop-up.js";
 
 //Підключення файлу відправки форми без перезавантаження вікна
-//import "./modules/sending-data.js";
+import "./modules/sending-data.js";
 
 //Підключення файлу one-news
 import "./modules/one-news.js";
@@ -113,14 +113,14 @@ let next;
 
    //------Підключення  прелоудерa---------
    //flsFunctions.preloaderF();
-   document.addEventListener('DOMContentLoaded', flsFunctions.preloaderF());
+   //  document.addEventListener('DOMContentLoaded', flsFunctions.preloaderF());
    //
 
 window.onload = function () {
 
    //Приховання прелоудера
-   flsFunctions.downloadedWindow()
-   console.log('go');
+   // flsFunctions.downloadedWindow()
+   // console.log('go');
 
    //----------Зміна стилю Header-------------
 
