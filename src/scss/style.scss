@@ -26,12 +26,18 @@ body {
   font-size: 14px;
   color: #ffffff;
   background: #e5e5e5;
+  position: relative;
 }
-._lock {
+.lock {
   overflow: hidden;
+}
+.overflow {
+  overflow: hidden !important;
 }
 
 @import "preloader";
+
+
 
 .wrapper {
   position: relative;

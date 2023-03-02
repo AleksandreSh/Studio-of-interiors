@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mediaFiles.forEach(elem => {
         elem.addEventListener('load', () => {
             i++;
-
+            scrollController.disabledScroll();
             preloaderPercent.innerHTML = Math.round((i * 100) / mediaFiles.length);
 
             if (i == mediaFiles.length) {
@@ -195,7 +195,20 @@ function isLoaded() {
         preloaderTitle.classList.add('preloader__title__active');
     }, 500);
     setTimeout(() => {
+        scrollController.enableScroll();
         preloader.classList.add('preloader__hide');
         document.body.classList.remove('overflow');
     }, 2000);
 }
+const scrollController = {
+    disabledScroll (){
+        document.body.style.cssText = `
+        overflow: hidden;
+        `;
+    },
+    enableScroll (){
+        document.body.style.cssText = '';
+    },
+}
+scrollController.disabledScroll();
+scrollController.enableScroll();
