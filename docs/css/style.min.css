@@ -792,6 +792,7 @@ body {
 }
 
 .preloader {
+  overflow: hidden;
   width: 100%;
   height: 100vh;
   background: #000;
@@ -803,7 +804,7 @@ body {
   left: 0;
   z-index: 200;
   transition: all 0.7s ease-out;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .preloader__container {
   width: 137px;
@@ -1351,7 +1352,7 @@ main {
 }
 @media (max-width: 500px) {
   .first-section {
-    height: 85vh;
+    height: 100vh;
   }
 }
 .first-section__swiper {

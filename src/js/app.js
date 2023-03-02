@@ -34,7 +34,7 @@ export const swiper = new Swiper('.first-section__swiper', {
 });
 
 // jQuery(document).ready(function($){
-	
+   
 // 	let autoPlayDelay = 1500;
 	
 // 	let options = {
