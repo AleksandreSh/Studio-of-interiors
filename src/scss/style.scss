@@ -115,7 +115,7 @@ main {
   letter-spacing: .06em;
   color: #fff;
 }
-
+/////////////////////////
 .scrollbar-navigation {
   width: 250px;
   display: flex;
@@ -136,13 +136,13 @@ main {
   @media (max-width: 768px) {
     right: 145px;
   }
-  @media (max-width: 730px) {
+  @media (max-width: 730px) { 
     width: 177px;
   }
   @media (max-width: 650px) {
     left: 16.14%;
     top: 25.83%;
-    transform: translate(13px);
+    // transform: translate(13px);
   }
   @media (max-width: 500px) {
     left: var(--pdng-conteiner);
@@ -175,20 +175,83 @@ main {
   }
 }
 
+// .swiper-container {
+//   width: 600px;
+//   height: 200px;
+// .swiper-slide{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// }
+// .swiper-progress-bar{
+// width: 600px;
+//   height: 4px;
+// position: relative;
+// margin: 20px auto;
+// background: #eeeeee;
+// .progress{
+//   height: inherit;
+//   left: 0;
+//   top: 0;
+//   position: absolute;
+//   background: #007aff;
+//   z-index: 1;
+// }
+// .progress-sections{
+//   left: 0;
+//   top: 0;
+//   position: absolute;
+//   height: inherit;
+//   width: inherit;
+//   z-index: 2;
+//   display: flex;
+//   flex-direction: row;
+//   span{
+//     flex: 1;
+//     height: inherit;
+//     border-right: 2px solid #eee;
+//     &:last-child{
+//       border-right-width: 0;
+//     }
+//   }
+// }
+// }
+// .swiper-counter{
+// width: 600px;
+// margin: 0 auto;
+// }
+
 .swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
-  position: static;
-  width: 148px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.32);
-  @media screen and (max-width: 730px) {
+  // position: static;
+  // width: 148px;
+  // height: 1px;
+  // background: rgba(255, 255, 255, 0.32);
+  // @media screen and (max-width: 730px) {
+  //   width: 88px;
+  // }
+
+    width: 186px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.32);
+    position: relative;
+ @media screen and (max-width: 730px) {
     width: 88px;
   }
 }
-.swiper-scrollbar-drag {
-  background: rgba(255, 255, 255);
-}
 
+
+.swiper-scrollbar-drag {
+  // background: rgba(255, 255, 255);
+  position: absolute;
+        top: 0;
+        left: 0;
+        background: #ffffff;
+        height: 100%;
+        transition: all 1s;
+}
+//////////////////
 .first-section {
   &__container {
     position: relative;

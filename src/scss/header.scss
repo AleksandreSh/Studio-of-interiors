@@ -38,12 +38,38 @@
     left: var(--pdng-conteiner, 63px);
     bottom: 40px;
 
-    @media (max-width: 1024px) {
-      bottom: 32px;
+    // @media (max-width : 1024px) {
+    //   // bottom: 32px;
+    //   bottom: 5%;
+    // }
+    @media (min-height: 600px) {
+      bottom: 10px;
     }
-    @media (max-width: 425px) {
-      bottom: 24px;
+    @media (min-height: 700px) {
+      bottom: 18%;
     }
+    @media (min-height: 750px) {
+      bottom: 21%;
+    }
+    @media (min-height: 800px) {
+      bottom: 25%;
+    }
+    @media (min-height: 840px) {
+      bottom: 27%;
+    }
+    @media (min-height: 890px) {
+      bottom: 31%;
+    }
+    @media (min-height: 910px) {
+      bottom: 33%;
+    }
+    @media (min-height: 1200px) {
+      bottom: 25%;
+    }
+    // @media (max-width: 425px) {
+    //   bottom: 24px;
+    // }
+  
   }
 
   @include data-box;

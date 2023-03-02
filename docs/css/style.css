@@ -890,14 +890,44 @@ body {
   left: var(--pdng-conteiner, 63px);
   bottom: 40px;
 }
-@media (max-width: 1024px) {
+@media (min-height: 600px) {
   .header .header__data-box {
-    bottom: 32px;
+    bottom: 10px;
   }
 }
-@media (max-width: 425px) {
+@media (min-height: 700px) {
   .header .header__data-box {
-    bottom: 24px;
+    bottom: 18%;
+  }
+}
+@media (min-height: 750px) {
+  .header .header__data-box {
+    bottom: 21%;
+  }
+}
+@media (min-height: 800px) {
+  .header .header__data-box {
+    bottom: 25%;
+  }
+}
+@media (min-height: 840px) {
+  .header .header__data-box {
+    bottom: 27%;
+  }
+}
+@media (min-height: 890px) {
+  .header .header__data-box {
+    bottom: 31%;
+  }
+}
+@media (min-height: 910px) {
+  .header .header__data-box {
+    bottom: 33%;
+  }
+}
+@media (min-height: 1200px) {
+  .header .header__data-box {
+    bottom: 25%;
   }
 }
 .header .data-box {
@@ -1391,7 +1421,6 @@ main {
   .scrollbar-navigation {
     left: 16.14%;
     top: 25.83%;
-    transform: translate(13px);
   }
 }
 @media (max-width: 500px) {
@@ -1430,10 +1459,10 @@ main {
 
 .swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
-  position: static;
-  width: 148px;
-  height: 1px;
+  width: 186px;
+  height: 2px;
   background: rgba(255, 255, 255, 0.32);
+  position: relative;
 }
 @media screen and (max-width: 730px) {
   .swiper-horizontal > .swiper-scrollbar,
@@ -1443,7 +1472,12 @@ main {
 }
 
 .swiper-scrollbar-drag {
-  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  height: 100%;
+  transition: all 1s;
 }
 
 .first-section__container {
