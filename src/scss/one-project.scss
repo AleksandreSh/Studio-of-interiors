@@ -50,17 +50,30 @@
     }
   }
 
+  &__img{
+    margin-bottom: 10px;
+  }
+
   &__data {
     display: flex;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: .06em;
+    color: #fff;
+    opacity: .7;
     @media (max-width: 600px) {
       flex-direction: column;
     }
     div {
       margin: 24px 32px 0 0;
-      &::before {
-        padding: 0 12px 0 0;
-      }
+      // &::before {
+      //   padding: 0 12px 0 0;
+      // }
+   
     }
+    
+  
   }
 
   &__share-box {
@@ -102,6 +115,7 @@
     }
   }
 }
+ 
 
 .second-project-section {
   width: var(--width-smaller-container);

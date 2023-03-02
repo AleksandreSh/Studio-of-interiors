@@ -83,6 +83,9 @@
     @media (max-width: 600px) {
       width: auto;
     }
+    @media (max-width: 360px) {
+      margin-bottom: 70px;
+    }
   }
 
   &__button {

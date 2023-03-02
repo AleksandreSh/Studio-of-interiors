@@ -55,6 +55,7 @@
   left: 0;
   z-index: 200;
   transition: all .7s ease-out;
+  overflow-y:hidden;
 
   &__container {
       width: 137px;
@@ -80,6 +81,7 @@
       line-height: 29px;
       letter-spacing: 0.26em;
       color:white;
+      overflow:unset;
   }
 
   &__hide {

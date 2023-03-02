@@ -49,8 +49,9 @@ import "./modules/input-file.js";
 //Підключення файлу застосування модального вікна
 import "./modules/pop-up.js";
 
+
 //Підключення файлу відправки форми без перезавантаження вікна
-import "./modules/sending-data.js";
+// import "./modules/sending-data.js";
 
 //Підключення файлу one-news
 import "./modules/one-news.js";

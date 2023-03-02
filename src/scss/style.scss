@@ -107,6 +107,15 @@ main {
     }
   }
 }
+
+.slider__number{
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: .06em;
+  color: #fff;
+}
+
 .scrollbar-navigation {
   width: 250px;
   display: flex;

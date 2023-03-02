@@ -338,6 +338,9 @@
     height: 80px;
     display: flex;
     align-items: center;
+    @media (max-width: 360px) {
+      height: 60px;
+    }
     &__conteiner {
       width: 100%;
       display: flex;

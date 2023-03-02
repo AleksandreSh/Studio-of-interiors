@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-   const form = document.getElementById('popup-form');
+// document.addEventListener('DOMContentLoaded', function () {
+//    const form = document.getElementById('popup-form');
 
-   form.addEventListener('submit', formSend);
+//    form.addEventListener('submit', formSend);
 
-   async function formSend(e) {
-      e.preventDefault();
+//    async function formSend(e) {
+//       e.preventDefault();
   
-   }
+//    }
 
-})
+// })
