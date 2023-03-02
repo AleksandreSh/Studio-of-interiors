@@ -213,7 +213,7 @@ const scrollController = {
         `;
     },
     enableScroll (){
-        document.body.style.cssText = 'position:relative';
+        document.body.style.cssText = '';
     },
 }
 scrollController.disabledScroll();

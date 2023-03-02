@@ -785,10 +785,9 @@ body {
   font-size: 14px;
   color: #ffffff;
   background: #e5e5e5;
-  position: relative;
 }
 
-.lock {
+._lock {
   overflow: hidden;
 }
 
@@ -916,6 +915,11 @@ body {
 @media (min-height: 800px) {
   .header .header__data-box {
     bottom: 25%;
+  }
+}
+@media (height: 810px) {
+  .header .header__data-box {
+    bottom: 10%;
   }
 }
 @media (min-height: 840px) {
