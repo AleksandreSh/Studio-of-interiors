@@ -1369,7 +1369,7 @@ main {
 }
 @media (max-width: 500px) {
   .first-section {
-    height: 610px;
+    height: 100vh;
   }
 }
 .first-section__swiper {
