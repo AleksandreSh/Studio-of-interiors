@@ -993,8 +993,7 @@ body {
   }
 }
 .header .data-box__flag {
-  margin-left: 0px;
-  margin-right: 10px;
+  margin-left: 10px;
   font-size: 10px;
 }
 .header .data-box__city-list {
@@ -1070,180 +1069,6 @@ body {
   }
 }
 
-.sidemenu {
-  width: 100vw;
-  height: 100%;
-  padding: 212px 422px 40px 56px;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  top: 0;
-  left: -150%;
-  transition: all 0.5s;
-  z-index: 25;
-  background: rgba(0, 0, 0, 0.98);
-}
-.sidemenu__main {
-  margin-left: 157px;
-}
-.sidemenu__main-list {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 322px;
-  list-style: none;
-}
-.sidemenu__main-item a {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  text-decoration: none;
-  color: #fff;
-  opacity: 0.5;
-  transition: all 0.2s;
-}
-.sidemenu__main-item a:hover {
-  opacity: 1;
-}
-.sidemenu__main-item-btn {
-  display: none;
-}
-.sidemenu__main-item-btn button {
-  width: 158px;
-  height: 42px;
-  border: 1px solid #ffffff;
-  background: transparent;
-  font-size: 11px;
-  line-height: 13px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #fff;
-}
-.sidemenu__footer {
-  /* margin-top: 170px; */
-  width: 546px;
-  display: flex;
-  justify-content: space-between;
-}
-.sidemenu__social-list {
-  width: 76px;
-  display: flex;
-  justify-content: space-between;
-}
-.sidemenu__social-item a {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.06em;
-  color: #fff;
-  text-decoration: none;
-}
-.sidemenu__social-item a:hover {
-  color: #fff;
-}
-.sidemenu__select {
-  position: relative;
-  width: 117px;
-  height: 24px;
-  padding: 0 10px 0 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 9px;
-  cursor: pointer;
-}
-.sidemenu__select span {
-  margin-left: 6px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.06em;
-  color: #fff;
-}
-.sidemenu__select:hover .sidemenu__option {
-  display: block;
-}
-.sidemenu__option {
-  width: 117px;
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  transition: all 0.5s;
-}
-.sidemenu__option-item {
-  margin: 2px 0;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 9px;
-  padding-left: 28px;
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  color: #fff;
-}
-.sidemenu__option-item__active {
-  background: rgba(255, 255, 255, 0.5);
-}
-.sidemenu__contacts {
-  width: 234px;
-  display: flex;
-  justify-content: space-between;
-}
-.sidemenu__tel a, .sidemenu__email a {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.06em;
-  color: #fff;
-  text-decoration: none;
-}
-.sidemenu__tel a:hover, .sidemenu__email a:hover {
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .sidemenu {
-    padding: 212px 0 40px 56px;
-  }
-  .sidemenu__main {
-    margin-left: 140px;
-  }
-}
-@media (max-width: 624px) {
-  .sidemenu {
-    padding: 152px 24px 24px;
-  }
-  .sidemenu__main {
-    margin: 0 auto;
-  }
-  .sidemenu__main-list {
-    align-items: center;
-  }
-  .sidemenu__main-item-btn {
-    display: block;
-  }
-  .sidemenu__footer {
-    width: 100%;
-    align-items: center;
-    /* margin-top: 105px; */
-  }
-  .sidemenu__social-list {
-    display: none;
-  }
-  .sidemenu__contacts {
-    width: auto;
-    flex-direction: column;
-  }
-  .sidemenu__tel {
-    text-align: right;
-  }
-  .sidemenu__email {
-    text-align: right;
-  }
-}
 .menu {
   display: flex;
   justify-content: space-between;
@@ -1299,6 +1124,12 @@ body {
 @media (min-height: 740px) {
   .menu__box-list {
     height: calc(100vh - 250px);
+    top: 20px;
+  }
+}
+@media (min-height: 740px) {
+  .menu__box-list {
+    height: calc(100vh - 312px);
     top: 20px;
   }
 }
@@ -1884,8 +1715,7 @@ main {
   }
 }
 .first-section .data-box__flag {
-  margin-left: 0px;
-  margin-right: 10px;
+  margin-left: 10px;
   font-size: 10px;
 }
 .first-section .data-box__city-list {
