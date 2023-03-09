@@ -7,6 +7,7 @@
     content="IE=edge 'unsafe-inline'"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="css/style.min.css" />
   <title>Studio of interiors</title>
 </head>
@@ -110,7 +111,7 @@
               <div class="first-section__swiper-slide swiper-slide">
                 <div class="first-section__img-example">
                   <img
-                    src="img/first-section/first-section-slide1.png"
+                    src="img/first-section/slide1.png"
                     alt=""
                   />
                 </div>
@@ -143,11 +144,21 @@
             <div class="first-section__container">
               <div class="scrollbar-navigation">
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-                <div class="swiper-button-next"></div>
+                
+                <div class="swiper-button-prev">
+                  <img src="img/main/arrow-prev.svg" class=""
+                      alt="" />
+                  <strong class="current-slide"></strong>
+              </div>
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+                
+              <div class="swiper-button-next ">
+                <strong class="total-slides"></strong>
+                <img src="img/main/arrow-next.svg" class=""
+                    alt="" />
+            </div>
+                
               </div>
               <h1 class="first-section__slogan">Thoughtful making of space</h1>
               <!-- Discaver more -->
@@ -585,6 +596,7 @@
       </div>
     </div>
   </div>
+ 
 </footer>
 
     </div>

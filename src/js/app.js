@@ -10,7 +10,7 @@ import Swiper, { Navigation, Pagination, Scrollbar } from 'swiper';
 
 export const swiper = new Swiper('.first-section__swiper', {
    modules: [Navigation, Pagination, Scrollbar],
-
+   
    // If we need pagination
    pagination: {
       el: '.swiper-pagination',
@@ -25,10 +25,23 @@ export const swiper = new Swiper('.first-section__swiper', {
    // And if we need scrollbar
    scrollbar: {
       el: '.swiper-scrollbar',
-      dragSize: 38,
-      scaleX: 1,
+      // dragSize: 38,
+      // scaleX: 1,
    },
-  
+   on: {
+      init: function () {
+         var currentSlide = '01' ;
+        document.querySelector('.current-slide').innerHTML = currentSlide;
+      },
+        slideChange: function(){
+          var currentSlide = '0' + (this.realIndex + 1);
+          document.querySelector('.current-slide').innerHTML = currentSlide;
+      },
+        beforeInit: function(){
+        let numOfSlides = '0' + (this.wrapperEl.querySelectorAll(".swiper-slide").length);
+        document.querySelector('.total-slides').innerHTML = numOfSlides;
+        }
+      },
    slidesPerView: 'auto',
    spaceBetween: 0,
 });
@@ -223,22 +236,23 @@ window.onload = function () {
    }
 };
 
-swiper.on('slideChange', function () {
-   nomberSlide = swiper.activeIndex;
-   prev = nomberSlide;
-   if (prev < 10) {
-      prevNomberSlide.textContent = "0" + prev;
-   } else {
-      prevNomberSlide.textContent = prev;
-   };
+// swiper.on('slideChange', function () {
 
-   next = nomberSlide + 2;
-   if (next < 10) {
-      nextNomberSlide.textContent = "0" + next;
-   } else {
-      nextNomberSlide.textContent = next;
-   }
-});
+//    nomberSlide = swiper.activeIndex;
+//    prev = nomberSlide;
+//    if (prev < 10) {
+//       prevNomberSlide.textContent = "0" + prev;
+//    } else {
+//       prevNomberSlide.textContent = prev;
+//    };
+
+//    next = nomberSlide + 2;
+//    if (next < 10) {
+//       nextNomberSlide.textContent = "0" + next;
+//    } else {
+//       nextNomberSlide.textContent = next;
+//    }
+// });
 
 swiperAbout.on('slideChange', function () {
    nomberSlide = swiperAbout.activeIndex;

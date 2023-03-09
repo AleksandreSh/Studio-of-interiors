@@ -121,6 +121,47 @@ main {
   letter-spacing: .06em;
   color: #fff;
 }
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  position: absolute;
+  color: #fff;
+  right: 15%;
+  top: 56.5%;
+  font-size: 11px;
+  margin-left: 12px;
+
+  img {
+      margin-left: 12px;
+      width: 12px;
+      height: 12px;
+  }
+
+
+}
+
+.swiper-button-prev {
+  position: absolute;
+  color: #fff;
+  top: 56.5%;
+  left: 64%;
+  font-size: 11px;
+  margin-right: 12px;
+
+  img {
+      margin-right: 12px;
+      width: 12px;
+      height: 12px;
+  }
+
+}
 /////////////////////////
 .scrollbar-navigation {
   width: 250px;
@@ -230,13 +271,13 @@ main {
 
 .swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
-  // position: static;
-  // width: 148px;
-  // height: 1px;
-  // background: rgba(255, 255, 255, 0.32);
-  // @media screen and (max-width: 730px) {
-  //   width: 88px;
-  // }
+  position: static;
+  width: 148px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.32);
+  @media screen and (max-width: 730px) {
+    width: 88px;
+  }
 
     width: 186px;
     height: 2px;
@@ -249,7 +290,7 @@ main {
 
 
 .swiper-scrollbar-drag {
-  // background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255);
   position: absolute;
         top: 0;
         left: 0;
