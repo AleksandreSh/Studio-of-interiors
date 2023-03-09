@@ -92,6 +92,7 @@
     font-size: 11px;
     line-height: 118.18%;
     letter-spacing: 0.06em;
+    z-index: 9999999;
 
     .language-box {
       @include box-language;

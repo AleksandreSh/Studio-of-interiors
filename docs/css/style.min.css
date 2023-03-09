@@ -949,6 +949,7 @@ body {
   font-size: 11px;
   line-height: 118.18%;
   letter-spacing: 0.06em;
+  z-index: 9999999;
 }
 .header .data-box .language-box {
   width: 78px;
@@ -1118,12 +1119,6 @@ body {
 @media (max-width: 600px) {
   .menu__box-list {
     height: calc(100vh - 140px);
-    top: 20px;
-  }
-}
-@media (min-height: 740px) {
-  .menu__box-list {
-    height: calc(100vh - 250px);
     top: 20px;
   }
 }
@@ -1671,6 +1666,7 @@ main {
   font-size: 11px;
   line-height: 118.18%;
   letter-spacing: 0.06em;
+  z-index: 9999999;
 }
 .first-section .data-box .language-box {
   width: 78px;
