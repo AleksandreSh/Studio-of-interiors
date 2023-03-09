@@ -102,7 +102,7 @@
     }
 
     &__location {
-     
+      z-index: 9999999;
       margin-left: 8.4%; //19.09%
       width: 117px;
       height: 24px;
@@ -135,6 +135,7 @@
     }
 
     &__city-list {
+      z-index: 9999999;
       width: 77px;
       margin-left: 6px;
       background: none;
@@ -153,6 +154,7 @@
 
     &__city-name {
       color: black;
+      z-index: 9999999;
     }
 
     &__contacts {

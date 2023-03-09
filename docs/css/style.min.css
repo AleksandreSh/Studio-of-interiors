@@ -968,6 +968,7 @@ body {
   }
 }
 .header .data-box__location {
+  z-index: 9999999;
   margin-left: 8.4%;
   width: 117px;
   height: 24px;
@@ -999,6 +1000,7 @@ body {
   font-size: 10px;
 }
 .header .data-box__city-list {
+  z-index: 9999999;
   width: 77px;
   margin-left: 6px;
   background: none;
@@ -1014,6 +1016,7 @@ body {
 }
 .header .data-box__city-name {
   color: black;
+  z-index: 9999999;
 }
 .header .data-box__contacts {
   width: auto;
@@ -1687,6 +1690,7 @@ main {
   }
 }
 .first-section .data-box__location {
+  z-index: 9999999;
   margin-left: 8.4%;
   width: 117px;
   height: 24px;
@@ -1718,6 +1722,7 @@ main {
   font-size: 10px;
 }
 .first-section .data-box__city-list {
+  z-index: 9999999;
   width: 77px;
   margin-left: 6px;
   background: none;
@@ -1733,6 +1738,7 @@ main {
 }
 .first-section .data-box__city-name {
   color: black;
+  z-index: 9999999;
 }
 .first-section .data-box__contacts {
   width: auto;
