@@ -31,6 +31,11 @@
     transition: all 0.9s ease 0s;
     // z-index: 0;
   }
+  // @media (min-width: 610px) {
+  //   &__zero {
+  //   height: 90vh;
+  //   }
+  // }
 
   .header__data-box {
     position: absolute;
@@ -43,7 +48,7 @@
     //   bottom: 5%;
     // }
     @media (min-height: 600px) {
-      bottom: 10px;
+      bottom: 40px;
     }
     @media (min-height: 700px) {
       bottom: 18%;
@@ -156,8 +161,12 @@
       top: 90px;
     }
     @media (max-width: 600px) {
-      height: calc(100vh - 132px);
-      top: 60px;
+      height: calc(100vh - 140px);
+      top: 20px;
+    }
+    @media (min-height: 740px) {
+      height: calc(100vh - 250px);
+      top: 20px;
     }
   }
   &__list {

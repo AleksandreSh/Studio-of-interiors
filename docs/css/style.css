@@ -899,7 +899,7 @@ body {
 }
 @media (min-height: 600px) {
   .header .header__data-box {
-    bottom: 10px;
+    bottom: 40px;
   }
 }
 @media (min-height: 700px) {
@@ -1117,8 +1117,14 @@ body {
 }
 @media (max-width: 600px) {
   .menu__box-list {
-    height: calc(100vh - 132px);
-    top: 60px;
+    height: calc(100vh - 140px);
+    top: 20px;
+  }
+}
+@media (min-height: 740px) {
+  .menu__box-list {
+    height: calc(100vh - 250px);
+    top: 20px;
   }
 }
 .menu__list {
@@ -1363,7 +1369,7 @@ main {
 }
 @media (max-width: 500px) {
   .first-section {
-    height: 100vh;
+    height: 610px;
   }
 }
 .first-section__swiper {
