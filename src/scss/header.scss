@@ -449,7 +449,7 @@ $fourth_text_color: #3A3E4B;
       width: 0;
       height: 0;
     }
-    
+
     @media (max-width: 1024px) {
       position: absolute;
       height: calc(100vh - 200px);
@@ -465,7 +465,7 @@ $fourth_text_color: #3A3E4B;
     }
     
     @media (min-height: 740px){
-    height: calc(100vh - 312px);
+    // height: calc(100vh - 312px);
     top: 20px;
   }
 }
