@@ -914,7 +914,7 @@ body {
 }
 @media (min-height: 800px) {
   .header .header__data-box {
-    bottom: 25%;
+    bottom: 31%;
   }
 }
 @media (height: 810px) {
@@ -1129,6 +1129,7 @@ body {
 }
 @media (min-height: 740px) {
   .menu__box-list {
+    height: calc(100vh - 312px);
     top: 20px;
   }
 }
