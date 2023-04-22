@@ -113,7 +113,7 @@ $fourth_text_color: #3A3E4B;
   //  Впорядкувати між == &__menu ==  та ==.menu ==
   &__menu {
     // width: 100%;
-    height: 100%;
+//     height: 100%;
     flex: 1 1 83.6%;
     @media (max-width: 1024px) {
       flex: 1 1 82.69%;
@@ -511,7 +511,6 @@ $fourth_text_color: #3A3E4B;
       width: 158px;
     }
   }
-}
 
 @media (max-width: 1024px) {
   .menu {
@@ -642,4 +641,5 @@ $fourth_text_color: #3A3E4B;
       //align-items: center;
     }
   }
+}
 }
